@@ -22,8 +22,12 @@
         margin-left: auto;
       }
       .banner{
-          width: 100%;
+          width: 99%;
       }
+      .book-now{
+          font-size: 26px;
+      }
+
       footer{
           grid-template-columns: 1fr 1fr;
       }

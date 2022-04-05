@@ -89,13 +89,18 @@ main{
 }
 .book-now{
     position: absolute;
-    background-color: skyblue;
-    color: white;
+    background-color:white;
+    color:black;
     left: 2%;
     bottom: 10%;
     border-radius: 20px 20px;
     padding: 5px;
     margin: auto;
+    font-size: 16px;
+}
+.book-now:hover{
+    background-color:skyblue ;
+    color:white;
 }
 .weather{
     display: grid;
