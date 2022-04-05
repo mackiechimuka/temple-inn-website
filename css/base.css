@@ -1,0 +1,205 @@
+header{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    box-shadow: 3px 3px 3px 3px gray;
+    background-color:whitesmoke;
+    margin: auto 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Barlow;
+}
+.header-logo{
+    grid-column: 1/3;
+    background-color: whitesmoke;
+    border-radius: 30% 30% 30% 30%;
+    width: 100px;
+}
+.phone{
+    grid-column: 8/9;
+    justify-items:center;
+    align-self: center;
+}
+nav{
+    grid-column:9/10 ;
+    justify-self: end;
+    align-self:center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0.8rem ;
+    color: blue;
+    display: block;
+    background-color: transparent;
+}
+nav ul li:active a{
+    background:black;
+    color: white;
+}
+nav ul li a:hover{
+    background-color: white;
+}
+nav ul{
+    display: none;
+}
+nav ul.open{
+    display: block;
+    position: absolute;
+    top: 119px;
+    right: 2.5%;
+    width: 100%;
+    background:grey
+}
+#hum-button span:nth-child(1) {
+    display: block;
+  }
+  #hum-button span:nth-child(2) {
+    display: none;
+  }
+  
+  #hum-button.open span:nth-child(1) {
+    display: none;
+  }
+  #hum-button.open span:nth-child(2) {
+    display: block;
+  }
+  /* main content*/
+main{
+    padding: 20px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.home{
+    display: block;
+}
+.banner{
+    padding: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 2px 2px gray;
+    position: relative;
+}
+.banner-imag{
+    width: 100%;
+    height: auto;
+}
+.book-now{
+    position: absolute;
+    background-color: skyblue;
+    color: white;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 20px 20px;
+    padding: 5px;
+    margin: auto;
+}
+.weather{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+}
+.weather-today{
+    grid-column: 1/2;
+    grid-row:1/4 ;
+    background-color: gray;
+}
+.tom-weather{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: black;
+}
+.thrd-weather{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: blue;
+}
+.fourth-weather{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: red;
+}
+.home-temple1{
+    align-items:center ;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.home-temple2{
+    box-shadow:2px 2px 2px 2px gray ;
+}
+.tmp1{
+    width: 100%;
+    height: auto;
+}
+.tmp2{
+    width: 100%;
+    height: auto;
+}
+.temple-info1 .temple-info2{
+    padding: 10px;
+    margin:auto ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    background-color:whitesmoke;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+.logo-footer{
+    border-radius: 30% 30% 30% 30%;
+    height: auto;
+    width: 75px;
+}
+form fieldset {
+    margin: auto 0;
+    padding: 10px ;
+    padding-inline-end: 20px;
+    box-shadow: 2px 2px 2px 2px gray;
+  }
+
+  form legend {
+    color:skyblue;
+    padding: 0.5rem;
+    background-color:transparent;
+    font-weight: bold;
+    border: none;
+  }
+  form label.top,
+form div {
+  display: block;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+form label.top input,
+form label.top select {
+  font-size: 16px;
+  border: solid 1px black;
+  border-radius: 2px;
+  padding: 10px;
+  color:black;
+  width: 100%;
+  background-color:transparent;
+}
+form label.top input:required {
+    border-left: red solid 5px;
+  }
+  
+  form label.top input:required:valid {
+    border-left: green solid 5px;
+  }
+  .submit>input{
+      width: 100%;
+      background-color: skyblue;
+      border-radius: 20% 20% ;
+  }
+
+

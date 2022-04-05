@@ -1,0 +1,30 @@
+@media screen and  (min-width:60em){
+    nav ul.open{
+        display: none;
+      }
+      .phone{
+          grid-column: 2/3;
+
+      }
+      nav{
+          grid-column: 5/10;
+          justify-self: center;
+      }
+      nav ul li a{
+          text-align: center;
+      }
+      nav button {
+        display: none;
+      }
+    
+      nav ul#navicon {
+        display: flex;
+        margin-left: auto;
+      }
+      .banner{
+          width: 100%;
+      }
+      footer{
+          grid-template-columns: 1fr 1fr;
+      }
+}
