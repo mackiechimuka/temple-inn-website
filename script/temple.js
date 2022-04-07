@@ -8,7 +8,7 @@ fetch(requestURL)
    .then(function(jsonObject){
        console.table(jsonObject);//temporary check for valid response and data parsing
        const temple =jsonObject["temples"];
-       templeforEach(showTemples);
+       temple.forEach(showTemples);
    });
    function showTemples(temple){
        //creating html elements for our jsonObject
