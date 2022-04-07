@@ -22,7 +22,7 @@ header{
 }
 nav{
     grid-column:9/10 ;
-    justify-self: end;
+    justify-self: center;
     align-self:center;
 }
 nav ul{
