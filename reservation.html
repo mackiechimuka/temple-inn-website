@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css'  href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png">
+    <script defer src="script/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="log" href="index.html">
+            <img class="header-logo" src="images/31933c65c57b42c4b0577307b8a20bee.png" alt="logo">
+        </a>
+        <a class="phone" href="+263774034998">
+            <img class="call-icon" src="images/phone-icon.png" alt="call-icon">
+        </a>
+        <nav>
+            <button id="hum-button"><span>&#9776;</span><span>X</span></button>
+            <ul id="navicon">
+                <li class="active"><a href="index.html"><img src="images/home-icon.png" alt="home-icon"></a></li>
+                <li><a href="temple.index">Temple</a></li>
+                <li><a href="Reservation.html">Reservation</a></li>
+                <li><a href="reception.html">Discover</a></li>
+                <li><a href="full-time-temple.html">Full-time Temple Missionary</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="make-reservation-heading">Reservation</h1>
+        <form action="reservation.php" method="post">
+            <form action="">
+                <!--  General -->
+                <div class="form-group">
+                  <h2 class="heading">Booking & contact</h2>
+                  <div class="controls">
+                    <input type="text" id="name" class="floatLabel" name="name">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="controls">
+                    <input type="text" id="email" class="floatLabel" name="email">
+                    <label for="email">Email</label>
+                  </div>       
+                  <div class="controls">
+                    <input type="tel" id="phone" class="floatLabel" name="phone">
+                    <label for="phone">Phone</label>
+                  </div>
+                    <div class="grid">
+                      <div class="col-2-3">
+                        <div class="controls">
+                         <input type="text" id="street" class="floatLabel" name="street">
+                         <label for="street">Street</label>
+                        </div>          
+                      </div>
+                      <div class="col-1-3">
+                        <div class="controls">
+                          <input type="number" id="street-number" class="floatLabel" name="street-number">
+                          <label for="street-number">Number</label>
+                        </div>          
+                      </div>
+                    </div>
+                    <div class="grid">
+                      <div class="col-2-3">
+                        <div class="controls">
+                          <input type="text" id="city" class="floatLabel" name="city">
+                          <label for="city">City</label>
+                        </div>         
+                      </div>
+                      <div class="col-1-3">
+                        <div class="controls">
+                          <input type="text" id="post-code" class="floatLabel" name="post-code">
+                          <label for="post-code">Post Code</label>
+                        </div>         
+                      </div>
+                    </div>
+                    <div class="controls">
+                      <input type="text" id="country" class="floatLabel" name="country">
+                      <label for="country">Country</label>
+                    </div>
+                </div>
+                <!--  Details -->
+                <div class="form-group">
+                  <h2 class="heading">Details</h2>
+                  <div class="grid">
+                  <div class="col-1-4 col-1-4-sm">
+                    <div class="controls">
+                      <input type="date" id="arrive" class="floatLabel" name="arrive" value="<?php echo date('Y-m-d'); ?>">
+                      <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Arrive</label>
+                    </div>      
+                  </div>
+                  <div class="col-1-4 col-1-4-sm">
+                    <div class="controls">
+                      <input type="date" id="depart" class="floatLabel" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+                      <label for="depart" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Depart</label>
+                    </div>      
+                  </div>
+                    </div>
+                    <div class="grid">
+                  <div class="col-1-3 col-1-3-sm">
+                    <div class="controls">
+                      <i class="fa fa-sort"></i>
+                      <select class="floatLabel">
+                        <option value="blank"></option>
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <label for="fruit"><i class="fa fa-male"></i>&nbsp;&nbsp;People</label>
+                    </div>      
+                  </div>
+                  <div class="col-1-3 col-1-3-sm">
+                  <div class="controls">
+                    <i class="fa fa-sort"></i>
+                    <select class="floatLabel">
+                      <option value="blank"></option>
+                      <option value="deluxe" selected>With Bathroom</option>
+                      <option value="Zuri-zimmer">Without Bathroom</option>
+                    </select>
+                    <label for="fruit">Room</label>
+                   </div>     
+                  </div>
+              
+                  <div class="col-1-3 col-1-3-sm">
+                  <div class="controls">
+                    <i class="fa fa-sort"></i>
+                    <select class="floatLabel">
+                      <option value="blank"></option>
+                      <option value="single-bed">Zweibett</option>
+                      <option value="double-bed" selected>Doppelbett</option>
+                    </select>
+                    <label for="fruit">Bedding</label>
+                   </div>     
+                  </div>
+                    
+                   </div>
+                    <div class="grid">
+                      <p class="info-text">Please describe your needs e.g. Extra beds, children's cots</p>
+                      <br>
+                      <div class="controls">
+                        <textarea name="comments" class="floatLabel" id="comments"></textarea>
+                        <label for="comments">Comments</label>
+                        </div>
+                          <button type="submit" value="Submit" class="col-1-4">Submit</button>
+                    </div>  
+                </div> <!-- /.form-group -->
+              </form>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <a href="index.html">
+                <img class="logo-footer" src="images/31933c65c57b42c4b0577307b8a20bee.png" alt="footlogo">
+            </a>
+        </div>
+        <div class="temple-inn-address">
+            4800 Montgomery Ln #300<br> Bethesda, MD 20814 <br>MD 20814 <a href="https://goo.gl/maps/ALkGD3KPfDJR5Ry86" target="blank"><img src="images/map-icon.png" alt="map-icon"></a>
+        </div>
+        <div class="newslater">
+            <form method="get" action="#">
+                <fieldset>
+                    <legend>Newsletter</legend>
+                    <label class="top">First Name*<input type="text" name="firstname" required/></label>
+                    <label class="top">Last Name*<input type="text" name="lastname" required?></label>
+                    <label class="top">Email*<input type="email" placeholder="someone@gmail.com" required?></label>
+                    <label class="top">Daily Newsletter<input type="checkbox" name="subscribe" required></label>
+                    <div class="submit">
+                        <input type="submit" value="subscribe"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class=lower-info>
+            <hr/>
+            <div class="copyright">
+              &copy; <span id="currentyear"></span> Temple-Inn Contact Us Last Updated:
+              <span id="currentdate"></span>
+            </div>
+            <div class="last-updated">
+              <p></p>
+            </div>
+
+          </div>
+
+    </footer>
+</body>
+</html>

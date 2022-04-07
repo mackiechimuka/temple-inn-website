@@ -1,52 +1,52 @@
 {
-    "data": [
+    "temples": [
       {
         "name": "Brigham City Utah Temple",
         "phone": "(1) 435-695-2170",
-        "email": "",
+        "email": "N/A",
         "address":"250 S Main\\n StBrigham City \\n UT 84302-2560\\n United States ",
         "services": "No clothing rental available\\n No cafeteria available\\nNo patron housing available\\nDistribution center nearby",
         "history": "Dedicated on 23 September 2012",
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": ""
+        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/brigham_city_utah_temple_dawn.png"
       },
       {
         "name": "Cedar City Utah Temple",
         "phone": "(1) 435-572-4150",
-        "email": "",
+        "email": "N/A",
         "address": "280 South Cove Dr\\n Cedar City UT 84720\\n United States",
         "services": "Clothing rental available\\n No cafeteria available\\n No patron housing available\\n Distribution center nearby",
         "history": "Dedicated on 10 December 2017",
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": ""
+        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/cedar-city-temple.png"
       },
       {
         "name": "Dallas Texas Temple",
         "phone": "(1) 972-991-1273",
-        "email": "",
+        "email": "N/A",
         "address": "6363 Willow Ln\\n Dallas TX 75230-2227\\n United States",
         "services": "Clothing rental available\\n No cafeteria available\\n No patron housing available\\n Distribution center nearby",
         "history": "Dedicated on 5 March 1989",
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": ""
+        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/dallas-texas-temple.png"
       },
       {
         "name": "Idaho Falls Idaho Temple",
         "phone": "(1) 208-522-7669",
-        "email": "",
+        "email": "N/A",
         "address": "1000 Memorial Dr\\n Idaho Falls ID 83402-3410\\n United States",
         "services": "Clothing rental available\\n No cafeteria available\\n No patron housing available\\n Distribution center nearby",
         "history": "Dedicated on",
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": ""
+        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/idaho_falls_idaho_temple.png"
       }
     ]
   }
