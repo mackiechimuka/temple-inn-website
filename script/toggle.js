@@ -1,9 +1,7 @@
-document.getElementById("modify").innerHTML = document.lastModified
+const date1 = new Date();
+const year = date1.getFullYear();
+document.getElementById("currentyear").textContent = year;
 
-function toggleMenu(){
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
-}
+const date2 = document.querySelector('#currentdate');
 
-const x= document.getElementById('hamburgerBtn')
-x.onclick = toggleMenu;
+document.querySelector(".last-updated").textContent = `Last Updated: ${document.lastModified}`;
