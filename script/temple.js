@@ -30,17 +30,17 @@ fetch(requestURL)
        const dislikes= document.createElement("span");
        let numDisikes = Number(window.localStorage.getItem(temple.name));
 
-       timage.setAttribute('src', temple.imageurl);
-       timage.setAttribute('alt', 'images/like.png');
-       timage.setAttribute('loading', 'lazy');
+       timage.setAttribute("src", temple.imageurl);
+       timage.setAttribute("alt", "images/like.png");
+       timage.setAttribute("loading", "lazy");
 
-       like.setAttribute('src', 'images/like.png');
-       like.setAttribute('class', 'like');
+       like.setAttribute("src", "images/like.png");
+       like.setAttribute("class", "like");
        like.setAttribute('id', temple.name);
 
-       dislike.setAttribute('src', 'images/like.png');
-       dislike.setAttribute('class', 'dislike');
-       dislike.setAttribute('id', temple.name);
+       dislike.setAttribute("src", "images/like.png");
+       dislike.setAttribute("class", "dislike");
+       dislike.setAttribute("id", temple.name);
 
        name.textContent = temple.name;
        phone.textContent= "Phone" + temple.phone;

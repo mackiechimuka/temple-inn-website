@@ -111,22 +111,23 @@ main{
 .weather-today{
     grid-column: 1/2;
     grid-row:1/4 ;
-    background-color: gray;
+    
+}
+#today-weather{
+    width: 50%;
 }
 .tom-weather{
     grid-column: 2/3;
     grid-row: 1/2;
-    background-color: black;
 }
 .thrd-weather{
     grid-column: 2/3;
     grid-row: 2/3;
-    background-color: blue;
 }
 .fourth-weather{
     grid-column: 2/3;
     grid-row: 3/4;
-    background-color: red;
+
 }
 .home-temple1{
     align-items:center ;
