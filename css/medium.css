@@ -104,4 +104,14 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 10px;
   }
+  /*Full-Time Missionary page*/
+  .full-time-m{
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+  }
+  .thanks-message{
+      grid-column: 1/3;
+      grid-row: 1/2;
+      padding: 10px;
+  }
 }
