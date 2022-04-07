@@ -1,4 +1,4 @@
-const requestURL ="https://mackiechimuka.github.io/wdd230/directory/temples.json";
+const requestURL ="https://mackiechimuka.github.io/temple-inn-website/data/temples.json";
 
 const cards = document.querySelector(".temples");
 

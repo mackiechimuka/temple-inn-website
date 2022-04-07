@@ -307,6 +307,14 @@ form label.top input:required {
     width: 50%;
     border-radius: 8px;
   }
+  /*temples*/
+  .temple{
+      box-shadow: 2px 2px 2px 2px gray;
+  }
+  .temples>section{
+      box-shadow: 2px 2px 2px 2px gray;
+      padding: 10px;
+  }
           
 
 

@@ -98,4 +98,10 @@
     width: 75%;
     margin: auto;
   }
+  /*temples page*/
+  .temples{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+  }
 }
