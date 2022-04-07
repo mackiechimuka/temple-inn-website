@@ -1,5 +1,4 @@
-const requestURL =
-  "https://askhope.github.io/wdd230-final/data/temples-list.json";
+const requestURL ="https://mackiechimuka.github.io/wdd230/directory/temples.json";
 
 const cards = document.querySelector(".temples");
 
