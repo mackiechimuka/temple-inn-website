@@ -3,11 +3,11 @@ const cards= document.querySelector(".temples");
 
 fetch(requestURL)
    .then(function(response){
-       return response.json();
+    return response.json();
    })
    .then(function(jsonObject){
        console.table(jsonObject);//temporary check for valid response and data parsing
-       const temple =jsonObject["temples"];
+       const temple =jsonObject["data"];
        temple.forEach(showTemples);
    });
    function showTemples(temple){
