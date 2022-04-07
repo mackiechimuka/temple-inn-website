@@ -1,4 +1,4 @@
-const requestURL="https://github.com/mackiechimuka/temple-inn-website/data/data.json";
+const requestURL="https://mackiechimuka.github.io/temple-inn-website/data/data.json";
 const cards= document.querySelector(".temples");
 
 fetch(requestURL)

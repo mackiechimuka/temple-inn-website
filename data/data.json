@@ -10,7 +10,7 @@
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/brigham_city_utah_temple_dawn.png"
+        "imageurl": "https://mackiechimuka.github.io/temple-inn-website/images/brigham_city_utah_temple_dawn.png"
       },
       {
         "name": "Cedar City Utah Temple",
@@ -22,7 +22,7 @@
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/cedar-city-temple.png"
+        "imageurl": "https://mackiechimuka.github.io/temple-inn-website/images/cedar-city-temple.png"
       },
       {
         "name": "Dallas Texas Temple",
@@ -34,7 +34,7 @@
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/dallas-texas-temple.png"
+        "imageurl": "https://mackiechimuka.github.io/temple-inn-website/images/dallas-texas-temple.png"
       },
       {
         "name": "Idaho Falls Idaho Temple",
@@ -46,7 +46,7 @@
         "ordianceSchedule":"available by appointment",
         "sessionSchedule":"available by appointment",
         "templeSchedule":"available by appointment",
-        "imageurl": "https://github.com/mackiechimuka/temple-inn-website/images/idaho_falls_idaho_temple.png"
+        "imageurl": "https://mackiechimuka.github.io/temple-inn-website/images/idaho_falls_idaho_temple.png"
       }
     ]
   }
