@@ -20,8 +20,6 @@ const now = new Date();
 const datehead =document.getElementById("time-today");
 const dateuk = new Intl.DateTimeFormat("en-UK", {  dateStyle: "full",}).format(now);
 datehead.innerHTML = `<em>${dateuk}</em>`;
-
-
 function toggleMenu() {
   document.getElementById("navicon").classList.toggle("open");
   document.getElementById("hum-button").classList.toggle("open");
@@ -37,4 +35,11 @@ window.onresize = () => {
     }
   
   }
+
+
+
+
+
+
+  
 
