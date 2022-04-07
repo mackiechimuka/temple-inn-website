@@ -280,7 +280,6 @@ form label.top input:required {
   .dateInfo,
   .addInfo {
     color: black;
-    /*font-weight: bold;*/
     font-family: Barlow;
     background-color: transparent;
     border-radius: 5px;

@@ -1,0 +1,56 @@
+{
+    "temples": [
+      {
+        "templeName": "Brigham City Utah Temple",
+        "location": "Utah, United States",
+        "address": "250 S Main, StBrigham City , UT 84302-2560,United States",
+        "phone": "(1) 435-695-2170",
+        "email": "N/A",
+        "services": "Distribution center nearby",
+        "history": "Dedicated on 23 September 2012",
+        "ordinance_schedule": "Temple Appointments Available Online",
+        "session_schedule": "Temple Appointments Available Online",
+        "closure_schedule": "N/A",
+        "imageUrl": "https://mackiechimuka.github.io/temple-inn-website/images/brigham_city_utah_temple_dawn.png"
+      },
+      {
+        "templeName": "Cedar City Utah Temple",
+        "location": "Utah,USA",
+        "address": "280 South Cove Dr,Cedar City UT 84720, United States",
+        "phone": "(1) 435-572-4150",
+        "email": "N/A",
+        "services": "Distribution center nearby",
+        "history": "Dedicated on 10 December 2017",
+        "ordinance_schedule": "Temple Appointments Available Online",
+        "session_schedule": "Temple Appointments Available Online",
+        "closure_schedule": "N/A",
+        "imageUrl": "https://mackiechimuka.github.io/temple-inn-website/images/cedar-city-temple.png"
+      },
+      {
+        "templeName": "Dallas Texas Temple",
+        "location": "Texas, United States",
+        "address": "6363 Willow Ln, Dallas TX 75230-2227, United States",
+        "phone": "(1) 972-991-1273",
+        "email": "N/A",
+        "services": "Distribution center nearby",
+        "history": "Dedicated on 5 March 1989",
+        "ordinance_schedule": "Temple Appointments Available Online",
+        "session_schedule": "Temple Appointments Available Online",
+        "closure_schedule": "Temple Appointments Available Online",
+        "imageUrl": "https://mackiechimuka.github.io/temple-inn-website/images/dallas-texas-temple.png"
+      },
+      {
+        "templeName": "Idaho Falls Idaho Temple",
+        "location": "Idaho, United States",
+        "address": "1000 Memorial Dr,Idaho Falls ID 83402-3410, United States",
+        "phone": "(1) 208-522-7669",
+        "email": "N/A",
+        "services": "Temple Appointments Available Online",
+        "history": "Dedicated on",
+        "ordinance_schedule": "Temple Appointments Available Online",
+        "session_schedule": "Temple Appointments Available Online",
+        "closure_schedule": "Temple Appointments Available Online",
+        "imageUrl": "https://mackiechimuka.github.io/temple-inn-website/images/idaho_falls_idaho_temple.png"
+      }
+    ]
+  }

@@ -1,97 +1,81 @@
-const requestURL="https://mackiechimuka.github.io/temple-inn-website/data/data.json";
-const cards= document.querySelector(".temples");
+const requestURL =
+  "https://askhope.github.io/wdd230-final/data/temples-list.json";
+
+const cards = document.querySelector(".temples");
 
 fetch(requestURL)
-   .then(function(response){
+  .then(function (response) {
     return response.json();
-   })
-   .then(function(jsonObject){
-       console.table(jsonObject);//temporary check for valid response and data parsing
-       const temple =jsonObject["data"];
-       temple.forEach(showTemples);
-   });
-   function showTemples(temple){
-       //creating html elements for our jsonObject
-       let card = document.createElement("section");
-       let timage = document.createElement("img");
-       let name = document.createElement("h2");
-       let phone = document.createElement("p");
-       let address= document.createElement("p");
-       let email = document.createElement("p");
-       let services = document.createElement("p");
-       let history = document.createElement("p");
-       let ordiance = document.createElement("p");
-       let session = document.createAttribute("p");
-       let templeSchedule = document.createElement("p");
-       let like = document.createElement("img");
-       const likesdisplay =document.createElement("span");
-       let numLikes = Number(window.localStorage.getItem(temple.name));
-       let dislike = document.createElement("img");
-       const dislikes= document.createElement("span");
-       let numDisikes = Number(window.localStorage.getItem(temple.name));
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); // temporary checking for valid response and data parsing
+    const temple = jsonObject["temples"];
+    temple.forEach(displayTemples);
+  });
 
-       timage.setAttribute("src", temple.imageurl);
-       timage.setAttribute("alt", "images/like.png");
-       timage.setAttribute("loading", "lazy");
+function displayTemples(temple) {
+  // Create elements to add to the document
+  let card = document.createElement("section");
+  let image = document.createElement("img");
+  let temple_name = document.createElement("h2");
+  let location = document.createElement("p");
+  let address = document.createElement("p");
+  let phone = document.createElement("p");
+  let email = document.createElement("p");
+  let services = document.createElement("p");
+  let history = document.createElement("p");
+  let ord_schedule = document.createElement("p");
+  let ses_schedule = document.createElement("p");
+  let clos_schedule = document.createElement("p");
+  let like = document.createElement("img");
+  const likes_display = document.createElement("span");
+  let like_count = Number(window.localStorage.getItem(temple.templeName));
 
-       like.setAttribute("src", "images/like.png");
-       like.setAttribute("class", "like");
-       like.setAttribute('id', temple.name);
+  image.setAttribute("src", temple.imageUrl);
+  image.setAttribute("class", "temple");
+  image.setAttribute("alt", "images/like.png");
+  image.setAttribute("loading", "lazy");
 
-       dislike.setAttribute("src", "images/like.png");
-       dislike.setAttribute("class", "dislike");
-       dislike.setAttribute("id", temple.name);
+  like.setAttribute("src", "images/like.png");
+  like.setAttribute("class", "like");
+  like.setAttribute("id", temple.templeName);
 
-       name.textContent = temple.name;
-       phone.textContent= "Phone" + temple.phone;
-       address.textContent = "Address"+ temple.address;
-       email.textContent = "Email" + temple.email;
-       services.textContent = "Services" + temple.services;
-       history.textContent = "History" + temple.history;
-       ordiance.textContent = "Ordinance Schedule" + temple.ordianceSchedule;
-       session.textContent = "Session Schedule" + temple.sessionSchedule;
-       templeSchedule.textContent = "Temple Schedule" + temple.templeSchedule;
-       likesdisplay.textContent = "" + numLikes +"likes";
-       dislikes.textContent ="" + numDisikes + "dislikes"
+  temple_name.textContent = temple.templeName;
+  address.textContent = "Address: " + temple.address;
+  location.textContent = "Location: " + temple.location;
+  phone.textContent = "Phone: " + temple.phone;
+  email.textContent = "Email: " + temple.email;
+  services.textContent = "Services: " + temple.services;
+  history.textContent = "History: " + temple.history;
+  ord_schedule.textContent = "Ordinance schedule: " + temple.ordinance_schedule;
+  ses_schedule.textContent = "Session schedule: " + temple.session_schedule;
+  clos_schedule.textContent = "Closure schedule: " + temple.closure_schedule;
+  likes_display.textContent = " " + like_count + " likes.";
 
-       card.appendChild(timage);
-       card.appendChild(name); 
-       card.appendChild(address);
-       card.appendChild(phone);
-       card.appendChild(email);
-       card.appendChild(services);
-       card.appendChild(history);
-       card.appendChild(ordiance);
-       card.appendChild(templeSchedule);
-       card.appendChild(session);
-       card.appendChild(like);
-       card.appendChild(likesdisplay);
-       card.appendChild(dislike);
-       card.appendChild(dislikes);
+  card.appendChild(image);
+  card.appendChild(temple_name);
+  card.appendChild(address);
+  card.appendChild(location);
+  card.appendChild(phone);
+  card.appendChild(email);
+  card.appendChild(services);
+  card.appendChild(history);
+  card.appendChild(ord_schedule);
+  card.appendChild(ses_schedule);
+  card.appendChild(clos_schedule);
+  card.appendChild(like);
+  card.appendChild(likes_display);
 
-       //appending html class with section cards
-       cards.appendChild(card)
-      
+  // Add/append the existing HTML div with the cards class with the section(card)
+  cards.appendChild(card);
 
-       function sumLikes(){
-        // add  number of likes.
-        numLikes++;
-        // store the new number of likes value
-        
-        localStorage.setItem(like.id, numLikes);
-        window.location.reload();
-    }
-      like.onclick = sumLikes
+  function addLike() {
+    // increment the number of likes.
+    like_count++;
+    // store the new number of likes value
+    localStorage.setItem(like.id, like_count);
+    window.location.reload();
+  }
 
-      function addDislikes(){
-        // add  number of dislikes.
-        numDisikes++;
-        // store the new number of dislikes value
-        
-        localStorage.setItem(dislike.id, numDisikes);
-        window.location.reload();
-    }
-        dislike.onclick = addDislikes
-     
-
-   }
+  like.onclick = addLike;
+}
