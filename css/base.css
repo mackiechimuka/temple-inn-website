@@ -1,3 +1,4 @@
+
 header{
     display:grid ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
@@ -72,6 +73,21 @@ main{
     padding: 20px;
     margin: auto;
     box-shadow: 2px 2px 2px 2px gray;
+}
+p{
+    font-family: Roboto;
+    font-family: 16px;
+    padding: 10px;
+}
+h2{
+    font-family: Barlow;
+    font-size: 18px;
+    padding: 10px;
+}
+h1{
+    font-family: Barlow;
+    font-size: 20px;
+    padding: 10px;
 }
 .home{
     display: block;
@@ -315,5 +331,9 @@ form label.top input:required {
       padding: 10px;
   }
           
-
+  @media  screen and (min-width:320px){
+      .temple{
+          width: 95%;
+      }
+  }
 
